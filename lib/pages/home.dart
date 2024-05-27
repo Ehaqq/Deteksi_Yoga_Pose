@@ -51,7 +51,7 @@ class _YoloVideoState extends State<YoloVideo> {
   Future<void> loadYoloModel() async {
     await vision.loadYoloModel(
         labels: 'assets/labels.txt',
-        modelPath: 'assets\best_float32.tflite',
+        modelPath: 'assets/best_float32.tflite',
         modelVersion: "yolov8",
         numThreads: 1,
         useGpu: true);
